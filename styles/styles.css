@@ -268,7 +268,7 @@ html {
 /* importing Jakarta Sans font in bold */
 @font-face {
   font-family: "Jakarta Sans";
-  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url(../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2), url(../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf);
+  src: url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff"), url("../fonts/PlusJakarta_Sans-2.5/webfonts/PlusJakartaSans-Bold.woff2"), url("../fonts/PlusJakarta_Sans-2.5/static/PlusJakartaSans-Bold.ttf");
   font-weight: bold;
 }
 @font-face {
@@ -290,7 +290,7 @@ h2,
 h3,
 h4,
 blockquote {
-  font-family: "Young Serif";
+  font-family: "young serif";
   font-weight: normal;
   color: #084b6d;
   margin: 0;
@@ -331,4 +331,112 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.small-copy {
+  font-size: 0.6rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 10px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 90px;
+}
+
+.button {
+  padding: 10px 36px;
+  border: 2px solid #084b6d;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.shop-button {
+  color: #084b6d;
+  background-color: transparent;
+}
+.shop-button:hover, .shop-button:focus {
+  background-color: #084b6d;
+  color: #fff;
+}
+
+.about-button {
+  color: #fff;
+  background-color: #084b6d;
+}
+.about-button:hover, .about-button:focus {
+  color: #084b6d;
+  background-color: transparent;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  background-color: #fff;
+  color: black;
+  z-index: 10;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+.announcement {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.nav-bar {
+  position: sticky;
+  top: 0;
+  border-top: 1px solid rgba(8, 75, 109, 0.08);
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+}
+.nav-bar .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-bar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+.search-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.search-cart .menu-icon,
+.search-cart .bag {
+  margin-right: 15px;
+}
+.search-cart .bag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slide-out-nav {
+  display: none;
 }

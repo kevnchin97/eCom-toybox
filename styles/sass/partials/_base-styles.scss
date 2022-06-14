@@ -1,0 +1,46 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 90px;
+}
+
+.button {
+    padding: 10px 36px;
+    border: 2px solid $primary;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.shop-button {
+    color: $primary;
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+        // on hover or on tab do this with transition of 0.3s. 
+        background-color: $primary;
+        color: $solid-white;
+    }
+}
+
+.about-button {
+    color: $solid-white;
+    background-color: $primary;
+
+    &:hover,
+    &:focus {
+        color: $primary;
+        background-color: transparent;
+    }
+}

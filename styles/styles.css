@@ -598,3 +598,46 @@ header .txt-container {
   text-align: center;
   padding: 60px;
 }
+
+footer {
+  background: #084b6d;
+  color: #fff;
+  padding: 75px;
+}
+footer .footer-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-logo h4 {
+  color: #fff;
+}
+
+.footer-nav {
+  width: 40%;
+}
+.footer-nav nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
+}
+.social i {
+  margin: 0 10px;
+}

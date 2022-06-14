@@ -24,15 +24,17 @@
 		<div class="wrapper">
 			<!-- slide out navigation -->
 			<input type="checkbox" id="open-menu">
-			<label for="open-menu">
+			<label for="open-menu" class="menu-button">
 				<img src="./assets/menu-button.svg" alt="Menu botton">
 			</label>
 			<!-- slide out content -->
 			<div class="slide-out-nav">
-				<button>x</button>
+				<div class="button-container">
+					<label for="open-menu" class="menu-close">x</label>
+				</div>
 				<!-- nav content -->
 				<nav>
-					<ul>
+					<ul class="main-menu">
 						<li><a href="">Shop</a></li>
 						<li><a href="">About</a></li>
 						<li><a href="">FAQ</a></li>
@@ -84,7 +86,7 @@
 				<p>Explore our range of hand-made toys</p>
 
 				<div class="category-gallery">
-					<ul>
+					<ul class="category-list">
 						<li class="items item-1">
 							<a href="#">
 								<img src="./assets/safari-trio.jpg" alt="safari animal toys for kids">

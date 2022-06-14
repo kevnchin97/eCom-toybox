@@ -27,6 +27,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 20px 0px;
     }
 
     input[type=checkbox] {
@@ -43,8 +44,28 @@
         margin-right: 15px;
     }
 
+    .menu-icon {
+        background-color: transparent;
+        border: none;
+    }
+
     .bag {
         display: flex;
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+
+        p {
+            width: 24px;
+            height: 24px;
+            background: $primary;
+            border-radius: 50%;
+            color: $solid-white;
+            text-align: center;
+        }
+
     }
 }
 

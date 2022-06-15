@@ -17,3 +17,27 @@ header .wrapper {
 header .txt-container {
     width: 48%;
 }
+
+// contact page header style
+.contact-header {
+    background: $quaternary;
+    padding-top: 120px;
+}
+
+.contact-header .wrapper {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.contact-header::after {
+    content: '';
+    // telling it what is in this pseudo element. in this case, we are using it as a empty element 
+    width: 100%;
+    height: 150px;
+    background-image: url(../assets/wave.svg);
+    background-size: 100% 150px;
+    // same width 100% of its parent (header) 
+    background-color: $quaternary;
+    display: block;
+}

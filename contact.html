@@ -62,6 +62,54 @@
             </div>
         </div>
     </div>
+
+    <header class="contact-header">
+        <div class="wrapper">
+            <h5>Contact</h5>
+            <h3>We're here to help</h3>
+            <p>any other questions reach out at <a href="mailto:support@toybox.io">support@toybox.io</a></p>
+        </div>
+    </header>
+    <!-- main section -->
+    <main class="contact" id="main-Content">
+        <div class="wrapper">
+            <form action="">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="surname" class="sr-only">Name</label>
+                <input type="text" id="surname" placeholder="surname">
+
+                <label for="email" class="sr-only">email</label>
+                <input type="email" id="email" placeholder="email">
+
+                <label for="phone" class="sr-only">phone</label>
+                <input type="tel" id="phone" placeholder="phone">
+
+                <select name="reason" id="reason">
+                    <option value="placeholder" disabled selected>reason for contacting</option>
+                    <!-- value isnt as relevant rn as it is in javascript -->
+                    <option value="refund">refund</option>
+                    <option value="status">status</option>
+                    <option value="praise">praise</option>
+                    <option value="complaints">complaints</option>
+                </select>
+
+                <label for="message" class="sr-only">message for me</label>
+                <textarea id="message" cols="30" rows="10" placeholder="message for me"></textarea>
+
+                <fieldset>
+                    <input type="checkbox" id="terms">
+                    <label for="terms">I agree to the terms & conditions</label>
+                </fieldset>
+
+                <button type="submit">send message</button>
+            </form>
+        </div>
+
+    </main>
+
+
     <footer id="footer" class="footer">
         <div class="wrapper">
             <div class="footer-flex-container">
